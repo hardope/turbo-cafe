@@ -119,6 +119,35 @@ npm run build
 
 ---
 
+### Backend tests
+
+Run all backend tests (auth, menu, orders):
+
+```bash
+cd backend
+python manage.py test auth menu orders
+```
+
+Run tests for a single app:
+
+```bash
+python manage.py test auth
+python manage.py test menu
+python manage.py test orders
+```
+
+Run a single test case or method:
+
+```bash
+python manage.py test orders.tests.OrderAPITests.test_student_can_cancel_until_ready_or_completed | cat
+```
+
+Notes:
+- Auth tests expect strong passwords due to Django validators (e.g. use `Str0ng!Passw0rd`).
+- JWT uses rotation and blacklist; logout blacklists the latest refresh token. Bearer access token must be set for profile requests.
+
+---
+
 ### Serving uploaded images (media)
 
 Image uploads from `ImageField` are stored under `backend/media/menu_images/...` (relative to `MEDIA_ROOT`).
