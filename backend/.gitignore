@@ -1,0 +1,5 @@
+*sqlite*
+**pycache**
+.env
+venv/
+menu_images/
