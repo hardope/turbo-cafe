@@ -2,6 +2,19 @@
 
 A full‑stack food vendor application with a Django REST Framework backend and a React (Vite) frontend.
 
+<br/>
+
+
+Project features:
+- User authentication with JWT (login, logout, token refresh)
+- Menu management with categories and images
+- Order placement and tracking
+- API documentation with Swagger UI and Redoc
+- Responsive frontend UI with Tailwind CSS
+- Development setup with Vite and Django
+- Comprehensive backend tests
+- Media handling for uploaded images
+
 - **Backend**: Django 5, DRF, SimpleJWT, drf-spectacular
 - **Frontend**: React 19, Vite 6, Tailwind CSS
 - **API Docs**: Swagger UI and Redoc exposed via DRF Spectacular
